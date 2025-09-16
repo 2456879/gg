@@ -4,28 +4,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary - Azul Corporativo Premium
+        // Primary - Azul Tecnológico Premium
         primary: {
           '50': '#F0F4FF',
-          '400': '#4F7CFF',
-          '500': '#1E40AF', // Azul corporativo
-          '600': '#1E3A8A',
+          '400': '#60A5FA',
+          '500': '#3B82F6', // Azul moderno e vibrante
+          '600': '#2563EB',
           '900': '#1E293B',
         },
-        // Secondary - Dourado Premium
+        // Secondary - Roxo Tecnológico
         secondary: {
-          '400': '#F59E0B',
-          '500': '#D97706', // Dourado elegante
-          '600': '#B45309',
+          '400': '#A78BFA',
+          '500': '#8B5CF6', // Roxo sofisticado
+          '600': '#7C3AED',
         },
-        // Accent - Verde Sucesso
+        // Accent - Ciano Futurista
         accent: {
-          '400': '#10B981',
-          '500': '#059669', // Verde profissional
-          '600': '#047857',
+          '400': '#22D3EE',
+          '500': '#06B6D4', // Ciano vibrante
+          '600': '#0891B2',
         },
-        // Dark - Tons premium
+        // Dark - Tons mais modernos
         dark: {
+          '700': '#374151',
           '800': '#1F2937',
           '900': '#111827',
           '950': '#030712',

@@ -49,10 +49,10 @@ const About: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Especialistas em <GradientText>automação prática</GradientText> para negócios reais
+              Especialistas em <GradientText>I.A aplicada</GradientText> para negócios reais
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              A Fortexis desenvolve soluções de automação inteligente sob medida para empresas que precisam 
+              A Fortexis I.A desenvolve soluções de automação inteligente sob medida para empresas que precisam 
               se manter competitivas, reduzir custos e aumentar a eficiência operacional sem complicações.
             </p>
           </div>

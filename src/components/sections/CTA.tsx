@@ -51,11 +51,11 @@ const CTA: React.FC = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Pronto para automatizar seu negócio e <GradientText>garantir sua competitividade?</GradientText>
+                Pronto para <GradientText>dominar seu mercado</GradientText> com I.A?
               </h2>
               <p className="text-xl text-white/80 mb-8">
-                Preencha o formulário e descubra como podemos reduzir seus custos operacionais, 
-                aumentar sua produtividade e manter seu negócio competitivo no mercado.
+                Preencha o formulário e descubra como nossa I.A pode multiplicar seus resultados, 
+                reduzir custos e colocar seu negócio à frente da concorrência.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -88,7 +88,7 @@ const CTA: React.FC = () => {
                 <iframe
                   src="https://typebot.co/null"
                   style={{ border: 'none', width: '100%', height: '600px' }}
-                  title="Typebot - Fortexis"
+                  title="Typebot - Fortexis I.A"
                 />
               </div>
             </div>

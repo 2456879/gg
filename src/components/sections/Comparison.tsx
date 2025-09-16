@@ -138,7 +138,7 @@ const Comparison: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Por que escolher a <GradientText>Fortexis</GradientText>?
+              Por que escolher a <GradientText>Fortexis I.A</GradientText>?
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Compare nossa abordagem completa com outras opções do mercado e entenda por que somos
@@ -167,7 +167,7 @@ const Comparison: React.FC = () => {
                       Freelancers e Autônomos
                     </div>
                     <div className="p-6 text-center font-semibold text-lg">
-                      Fortexis
+                      Fortexis I.A
                       <div className="text-sm text-white/60 font-normal">
                         (Nossa Agência)
                       </div>
@@ -230,6 +230,7 @@ const Comparison: React.FC = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-white/70">Automatik Labs:</span>
+                      <span className="text-sm text-white/70">Fortexis I.A:</span>
                       <StatusIcon status={row.automatik} />
                     </div>
                   </div>

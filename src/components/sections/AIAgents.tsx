@@ -109,7 +109,7 @@ const AIAgents: React.FC = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Sistemas inteligentes que <GradientText>Trabalham 24/7</GradientText> Para Seu Negócio
+                <GradientText>I.A que trabalha 24/7</GradientText> para seu negócio crescer
               </h2>
               <p className="text-xl text-white/80 mb-8">
                 Desenvolvemos sistemas automatizados inteligentes que executam tarefas complexas, 
@@ -170,7 +170,7 @@ const AIAgents: React.FC = () => {
                         </div>
                         <div>
                           <h4 className="font-medium text-white">Assistente IA</h4>
-                          <p className="text-xs text-white/60">Fortexis</p>
+                          <p className="text-xs text-white/60">Fortexis I.A</p>
                         </div>
                       </div>
                       <div className="space-y-3">

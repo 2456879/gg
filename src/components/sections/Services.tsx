@@ -49,7 +49,7 @@ const Services: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Soluções completas de <GradientText>Automação Inteligente</GradientText>
+              Soluções completas de <GradientText>I.A para Negócios</GradientText>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Desenvolvemos automações práticas e eficientes que integram todos os setores do seu negócio, 

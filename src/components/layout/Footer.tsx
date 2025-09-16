@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <Container>
         <div className="text-center">
           <div className="text-2xl font-display font-bold mb-4">
-            <GradientText>Fortexis</GradientText>
+            <GradientText>Fortexis I.A</GradientText>
           </div>
           <p className="text-white/70 max-w-sm mx-auto">
             Automação inteligente que fortalece seu negócio e garante competitividade no mercado.
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-dark-800/50 mt-10 pt-10">
           <p className="text-white/50 text-sm text-center">
-            © {new Date().getFullYear()} Fortexis. Todos os direitos reservados.
+            © {new Date().getFullYear()} Fortexis I.A. Todos os direitos reservados.
           </p>
         </div>
       </Container>
