@@ -60,8 +60,8 @@ const Services: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ServiceCard 
               icon={<Bot className="w-10 h-10" />}
-              title="Atendimento automatizado inteligente"
-              description="Sistemas que atendem seus clientes 24/7, resolvem dúvidas comuns e direcionam casos complexos para sua equipe, sem perder vendas."
+              title="Agentes de atendimento inteligente"
+              description="Agentes de I.A que atendem seus clientes 24/7, resolvem dúvidas comuns e direcionam casos complexos para sua equipe, sem perder vendas."
               features={[
                 "Atendimento 24/7 sem pausas",
                 "Integração com múltiplos canais",
@@ -70,8 +70,8 @@ const Services: React.FC = () => {
             />
             <ServiceCard 
               icon={<BrainCircuit className="w-10 h-10" />}
-              title="Automação comercial completa"
-              description="Sistemas que prospectam, qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente, aumentando seu faturamento."
+              title="Agentes comerciais completos"
+              description="Agentes de I.A que prospectam, qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente, aumentando seu faturamento."
               features={[
                 "Prospecção automática de clientes",
                 "Follow-up que nunca falha",
@@ -80,8 +80,8 @@ const Services: React.FC = () => {
             />
             <ServiceCard 
               icon={<Workflow className="w-10 h-10" />}
-              title="Automação de processos operacionais"
-              description="Eliminamos tarefas repetitivas e burocráticas, liberando sua equipe para focar em atividades que realmente geram receita."
+              title="Agentes de processos operacionais"
+              description="Agentes de I.A que eliminam tarefas repetitivas e burocráticas, liberando sua equipe para focar em atividades que realmente geram receita."
               features={[
                 "Eliminação de tarefas manuais",
                 "Integração entre sistemas",
@@ -90,8 +90,8 @@ const Services: React.FC = () => {
             />
             <ServiceCard 
               icon={<Network className="w-10 h-10" />}
-              title="Integração total de sistemas"
-              description="Conectamos todos os seus sistemas e departamentos, criando um fluxo de informações eficiente e eliminando retrabalho."
+              title="Agentes de integração de sistemas"
+              description="Agentes de I.A que conectam todos os seus sistemas e departamentos, criando um fluxo de informações eficiente e eliminando retrabalho."
               features={[
                 "Sincronização automática de dados",
                 "Dashboards executivos",
