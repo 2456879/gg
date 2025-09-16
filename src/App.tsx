@@ -4,7 +4,6 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Services from './components/sections/Services';
 import AIAgents from './components/sections/AIAgents';
-import Projects from './components/sections/Projects';
 import Methodology from './components/sections/Methodology';
 import Comparison from './components/sections/Comparison';
 import CTA from './components/sections/CTA';
@@ -21,7 +20,6 @@ function App() {
         <About />
         <Services />
         <AIAgents />
-        <Projects />
         <Methodology />
         <Comparison />
         <CTA />
