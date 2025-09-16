@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <div className="text-2xl font-display font-bold">
-              <GradientText>Fortexis</GradientText>
+              <span className="text-primary-500">Fortexis</span>
               <span className="ml-1">I.A</span>
             </div>
           </a>

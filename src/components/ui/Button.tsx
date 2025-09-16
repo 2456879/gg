@@ -18,8 +18,8 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'relative font-bold py-4 px-8 rounded-lg transition-all duration-300 text-white overflow-hidden group';
   
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500',
-    secondary: 'bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500',
+    primary: 'bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500 shadow-lg shadow-primary-500/25',
+    secondary: 'bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500 shadow-lg shadow-secondary-500/25',
   };
 
   return (

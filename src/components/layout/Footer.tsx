@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <Container>
         <div className="text-center">
           <div className="text-2xl font-display font-bold mb-4">
-            <GradientText>Fortexis</GradientText>
+            <span className="text-primary-500">Fortexis</span>
             <span className="ml-1">I.A</span>
           </div>
           <p className="text-white/70 max-w-sm mx-auto">

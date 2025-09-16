@@ -4,32 +4,41 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary - Azul Tecnológico Premium
+        // Primary - Azul Fortexis (baseado na logo)
         primary: {
-          '50': '#F0F4FF',
-          '400': '#60A5FA',
-          '500': '#3B82F6', // Azul moderno e vibrante
-          '600': '#2563EB',
-          '900': '#1E293B',
+          '50': '#F0F7FF',
+          '100': '#E0EFFF',
+          '200': '#BAD9FF',
+          '300': '#7CBEFF',
+          '400': '#369EFF',
+          '500': '#0C7EF2', // Azul principal da logo
+          '600': '#0A5BC7', // Azul mais escuro da logo
+          '700': '#0D4A9C',
+          '800': '#123E81',
+          '900': '#15356B',
         },
-        // Secondary - Roxo Tecnológico
+        // Secondary - Azul escuro complementar
         secondary: {
-          '400': '#A78BFA',
-          '500': '#8B5CF6', // Roxo sofisticado
-          '600': '#7C3AED',
+          '400': '#4F7FBF',
+          '500': '#2D5AA0', // Azul escuro sofisticado
+          '600': '#1E4080',
+          '700': '#1A3B75',
+          '800': '#15356B',
+          '900': '#0F2A5A',
         },
-        // Accent - Ciano Futurista
+        // Accent - Azul claro para contraste
         accent: {
-          '400': '#22D3EE',
-          '500': '#06B6D4', // Ciano vibrante
-          '600': '#0891B2',
+          '400': '#60A5FA',
+          '500': '#3B82F6', // Azul claro para acentos
+          '600': '#2563EB',
+          '700': '#1D4ED8',
         },
-        // Dark - Tons mais modernos
+        // Dark - Tons escuros premium
         dark: {
-          '700': '#374151',
-          '800': '#1F2937',
-          '900': '#111827',
-          '950': '#030712',
+          '700': '#1E293B',
+          '800': '#0F172A',
+          '900': '#020617',
+          '950': '#020617',
         },
       },
       fontFamily: {
