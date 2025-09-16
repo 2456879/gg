@@ -6,14 +6,14 @@ import Marquee from '../ui/Marquee';
 import { ArrowRight, Bot, Brain, Zap } from 'lucide-react';
 
 const benefitItems = [
-  "Redução de até 60% nos custos operacionais",
-  "Aumento de 40% na produtividade da equipe",
-  "Automação de 80% das tarefas repetitivas",
-  "ROI positivo em 90 dias",
+  "Redução de 70% nos custos operacionais",
+  "Aumento de 45% na satisfação do cliente",
+  "Automação de 85% das tarefas repetitivas",
+  "ROI positivo em 3 meses",
   "Disponibilidade 24/7",
-  "Crescimento sem contratar mais funcionários",
+  "Escalabilidade imediata",
   "Integração com sistemas existentes",
-  "Relatórios automáticos e precisos"
+  "Análise de dados em tempo real"
 ];
 
 const Hero: React.FC = () => {
@@ -53,17 +53,17 @@ const Hero: React.FC = () => {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
             </span>
             <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-              Soluções comprovadas para seu negócio
+              Tecnologia de ponta em IA
             </span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8">
             <GradientText>Automatize. Escale.</GradientText><br />
-            <span className="text-white">Domine o mercado com</span> <GradientText>I.A</GradientText>
+            Transforme seu negócio com IA
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
-            Automação inteligente que reduz custos operacionais, aumenta a eficiência e libera sua equipe para focar no que realmente importa: fazer seu negócio crescer.
+            Soluções de IA e automação humanizada que geram resultados reais, reduzem custos e aumentam a produtividade do seu negócio.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-16">
@@ -95,8 +95,8 @@ const Hero: React.FC = () => {
                 <Bot className="w-6 h-6 text-primary-400" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold mb-1">Automação Prática</h3>
-                <p className="text-sm text-white/70">Soluções que funcionam no dia a dia</p>
+                <h3 className="font-semibold mb-1">IA Humanizada</h3>
+                <p className="text-sm text-white/70">Agentes que pensam e agem como humanos</p>
               </div>
             </div>
 
@@ -105,8 +105,8 @@ const Hero: React.FC = () => {
                 <Brain className="w-6 h-6 text-accent-400" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold mb-1">Integração Total</h3>
-                <p className="text-sm text-white/70">Conecta todos os seus sistemas</p>
+                <h3 className="font-semibold mb-1">Automação 360°</h3>
+                <p className="text-sm text-white/70">Integração completa de processos</p>
               </div>
             </div>
 
@@ -115,8 +115,8 @@ const Hero: React.FC = () => {
                 <Zap className="w-6 h-6 text-primary-400" />
               </div>
               <div className="text-left">
-                <h3 className="font-semibold mb-1">ROI Garantido</h3>
-                <p className="text-sm text-white/70">Retorno comprovado em 90 dias</p>
+                <h3 className="font-semibold mb-1">Resultados Reais</h3>
+                <p className="text-sm text-white/70">ROI mensurável e garantido</p>
               </div>
             </div>
           </div>

@@ -4,32 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary - Azul Tecnológico Premium
+        // Primary - Azul Elétrico / Cobalto
         primary: {
-          '50': '#F0F4FF',
-          '400': '#60A5FA',
-          '500': '#3B82F6', // Azul moderno e vibrante
-          '600': '#2563EB',
-          '900': '#1E293B',
+          '50': '#EAF0FF',
+          '400': '#3A75FF',
+          '500': '#0057FF', // Cor principal
+          '600': '#0047D6',
+          '900': '#002D88',
         },
-        // Secondary - Roxo Tecnológico
+        // Secondary - Roxo Profundo
         secondary: {
-          '400': '#A78BFA',
-          '500': '#8B5CF6', // Roxo sofisticado
-          '600': '#7C3AED',
+          '400': '#7C3AED',
+          '500': '#4B00B7', // Cor secundária
+          '600': '#3A0094',
         },
-        // Accent - Ciano Futurista
+        // Accent - Verde Neon Suave
         accent: {
-          '400': '#22D3EE',
-          '500': '#06B6D4', // Ciano vibrante
-          '600': '#0891B2',
+          '400': '#00FFAA',
+          '500': '#00D18C', // Cor de destaque
+          '600': '#00A86B',
         },
-        // Dark - Tons mais modernos
+        // Dark - Tons escuros profissionais
         dark: {
-          '700': '#374151',
-          '800': '#1F2937',
-          '900': '#111827',
-          '950': '#030712',
+          '800': '#1A1A1A',
+          '900': '#111111',
+          '950': '#0B0B0B',
         },
       },
       fontFamily: {

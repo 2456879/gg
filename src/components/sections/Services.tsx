@@ -49,53 +49,53 @@ const Services: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Soluções completas de <GradientText>I.A para Negócios</GradientText>
+              Soluções completas de <GradientText>Automação 360°</GradientText>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Desenvolvemos automações práticas e eficientes que integram todos os setores do seu negócio, 
-              reduzindo custos e aumentando a produtividade da sua equipe.
+              Desenvolvemos soluções personalizadas que integram inteligência artificial
+              e automação para transformar todas as áreas do seu negócio.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ServiceCard 
               icon={<Bot className="w-10 h-10" />}
-              title="Agentes de atendimento inteligente"
-              description="Agentes de I.A que atendem seus clientes 24/7, resolvem dúvidas comuns e direcionam casos complexos para sua equipe, sem perder vendas."
+              title="Atendimento automatizado com IA humanizada"
+              description="Agentes de IA que conversam naturalmente com seus clientes, resolvem problemas e conduzem vendas com personalidade e empatia."
               features={[
-                "Atendimento 24/7 sem pausas",
+                "Atendimento 24/7 personalizado",
                 "Integração com múltiplos canais",
-                "Relatórios de performance automáticos"
+                "Análise de sentimento em tempo real"
               ]}
             />
             <ServiceCard 
               icon={<BrainCircuit className="w-10 h-10" />}
-              title="Agentes comerciais completos"
-              description="Agentes de I.A que prospectam, qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente, aumentando seu faturamento."
+              title="Automação do setor comercial"
+              description="Sistemas inteligentes para prospecção, qualificação de leads, follow-up e recuperação de vendas perdidas, sem perder o toque humano."
               features={[
-                "Prospecção automática de clientes",
-                "Follow-up que nunca falha",
-                "Recuperação de vendas perdidas"
+                "Qualificação automática de leads",
+                "Sequências de follow-up inteligentes",
+                "Análise preditiva de conversão"
               ]}
             />
             <ServiceCard 
               icon={<Workflow className="w-10 h-10" />}
-              title="Agentes de processos operacionais"
-              description="Agentes de I.A que eliminam tarefas repetitivas e burocráticas, liberando sua equipe para focar em atividades que realmente geram receita."
+              title="Otimização de processos internos"
+              description="Automatização de tarefas operacionais repetitivas, liberando sua equipe para atividades estratégicas e de alto valor."
               features={[
-                "Eliminação de tarefas manuais",
+                "Automação de processos (RPA)",
                 "Integração entre sistemas",
-                "Relatórios automáticos"
+                "Dashboards em tempo real"
               ]}
             />
             <ServiceCard 
               icon={<Network className="w-10 h-10" />}
-              title="Agentes de integração de sistemas"
-              description="Agentes de I.A que conectam todos os seus sistemas e departamentos, criando um fluxo de informações eficiente e eliminando retrabalho."
+              title="Integração de áreas com inteligência"
+              description="Soluções que conectam todos os departamentos do seu negócio com fluxos de dados inteligentes e decisões baseadas em insights."
               features={[
-                "Sincronização automática de dados",
-                "Dashboards executivos",
-                "Integração com sistemas existentes"
+                "Fluxos de trabalho automatizados",
+                "BI com machine learning",
+                "APIs inteligentes customizadas"
               ]}
             />
           </div>
