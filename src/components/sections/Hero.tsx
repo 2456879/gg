@@ -116,7 +116,8 @@ const Hero: React.FC = () => {
               </div>
               <div className="text-left">
                 <h3 className="font-semibold mb-1">Resultados Reais</h3>
-              <p className="text-sm text-white/70">ROI mensurável e garantido</p>
+                <p className="text-sm text-white/70">ROI mensurável e garantido</p>
+              </div>
             </div>
           </div>
         </div>
@@ -136,5 +137,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-  )
-}
