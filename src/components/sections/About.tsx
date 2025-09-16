@@ -66,7 +66,7 @@ const About: React.FC = () => {
             <AboutCard 
               icon={<Award className="w-12 h-12 text-accent-400" />}
               title="Resultados Comprovados"
-              description="Mais de 200 empresas atendidas com resultados mensuráveis: redução de custos, aumento de produtividade e crescimento sustentável."
+              description="Empresas de diversos segmentos já conquistaram resultados mensuráveis: redução de custos, aumento de produtividade e crescimento sustentável."
             />
             <AboutCard 
               icon={<Zap className="w-12 h-12 text-primary-400" />}
