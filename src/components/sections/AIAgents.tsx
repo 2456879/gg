@@ -169,8 +169,8 @@ const AIAgents: React.FC = () => {
                           <BrainCircuit size={18} className="text-white" />
                         </div>
                         <div>
-                          <h4 className="font-medium text-white">Assistente IA</h4>
-                          <p className="text-xs text-white/60">Automatik Labs</p>
+                          <h4 className="font-medium text-white">Agente IA</h4>
+                          <p className="text-xs text-white/60">Fortexis I.A</p>
                         </div>
                       </div>
                       <div className="space-y-3">
