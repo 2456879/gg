@@ -84,14 +84,11 @@ const CTA: React.FC = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
-              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10 overflow-hidden">
+              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <iframe
                   src="https://typebot.co/aplica-es-automatik-labs-e4owx7x"
-                  className="w-full h-[600px] rounded-2xl"
-                  style={{ border: 'none' }}
+                  style={{ border: 'none', width: '100%', height: '600px' }}
                   title="Typebot - Automatik Labs"
-                  allow="microphone; camera"
-                  sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
                 />
               </div>
             </div>
