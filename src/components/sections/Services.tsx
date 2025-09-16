@@ -49,53 +49,53 @@ const Services: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Soluções completas de <GradientText>Automação 360°</GradientText>
+              Soluções completas de <GradientText>Automação Inteligente</GradientText>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Desenvolvemos soluções personalizadas que integram inteligência artificial
-              e automação para transformar todas as áreas do seu negócio.
+              Desenvolvemos automações práticas e eficientes que integram todos os setores do seu negócio, 
+              reduzindo custos e aumentando a produtividade da sua equipe.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <ServiceCard 
               icon={<Bot className="w-10 h-10" />}
-              title="Atendimento automatizado com IA humanizada"
-              description="Agentes de IA que conversam naturalmente com seus clientes, resolvem problemas e conduzem vendas com personalidade e empatia."
+              title="Atendimento automatizado inteligente"
+              description="Sistemas que atendem seus clientes 24/7, resolvem dúvidas comuns e direcionam casos complexos para sua equipe, sem perder vendas."
               features={[
-                "Atendimento 24/7 personalizado",
+                "Atendimento 24/7 sem pausas",
                 "Integração com múltiplos canais",
-                "Análise de sentimento em tempo real"
+                "Relatórios de performance automáticos"
               ]}
             />
             <ServiceCard 
               icon={<BrainCircuit className="w-10 h-10" />}
-              title="Automação do setor comercial"
-              description="Sistemas inteligentes para prospecção, qualificação de leads, follow-up e recuperação de vendas perdidas, sem perder o toque humano."
+              title="Automação comercial completa"
+              description="Sistemas que prospectam, qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente, aumentando seu faturamento."
               features={[
-                "Qualificação automática de leads",
-                "Sequências de follow-up inteligentes",
-                "Análise preditiva de conversão"
+                "Prospecção automática de clientes",
+                "Follow-up que nunca falha",
+                "Recuperação de vendas perdidas"
               ]}
             />
             <ServiceCard 
               icon={<Workflow className="w-10 h-10" />}
-              title="Otimização de processos internos"
-              description="Automatização de tarefas operacionais repetitivas, liberando sua equipe para atividades estratégicas e de alto valor."
+              title="Automação de processos operacionais"
+              description="Eliminamos tarefas repetitivas e burocráticas, liberando sua equipe para focar em atividades que realmente geram receita."
               features={[
-                "Automação de processos (RPA)",
+                "Eliminação de tarefas manuais",
                 "Integração entre sistemas",
-                "Dashboards em tempo real"
+                "Relatórios automáticos"
               ]}
             />
             <ServiceCard 
               icon={<Network className="w-10 h-10" />}
-              title="Integração de áreas com inteligência"
-              description="Soluções que conectam todos os departamentos do seu negócio com fluxos de dados inteligentes e decisões baseadas em insights."
+              title="Integração total de sistemas"
+              description="Conectamos todos os seus sistemas e departamentos, criando um fluxo de informações eficiente e eliminando retrabalho."
               features={[
-                "Fluxos de trabalho automatizados",
-                "BI com machine learning",
-                "APIs inteligentes customizadas"
+                "Sincronização automática de dados",
+                "Dashboards executivos",
+                "Integração com sistemas existentes"
               ]}
             />
           </div>

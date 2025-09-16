@@ -138,11 +138,11 @@ const Comparison: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Por que escolher a <GradientText>Automatik Labs</GradientText>?
+              Por que escolher a <GradientText>Fortexis</GradientText>?
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Compare nossa solução completa com alternativas do mercado e entenda por que somos
-              a escolha ideal para transformar seu negócio.
+              Compare nossa abordagem completa com outras opções do mercado e entenda por que somos
+              a escolha certa para automatizar seu negócio com segurança e resultados garantidos.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ const Comparison: React.FC = () => {
                       Freelancers e Autônomos
                     </div>
                     <div className="p-6 text-center font-semibold text-lg">
-                      Automatik Labs
+                      Fortexis
                       <div className="text-sm text-white/60 font-normal">
                         (Nossa Agência)
                       </div>

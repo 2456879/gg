@@ -109,33 +109,33 @@ const AIAgents: React.FC = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Agentes de IA que <GradientText>Pensam e Agem</GradientText> Como Humanos
+                Sistemas inteligentes que <GradientText>Trabalham 24/7</GradientText> Para Seu Negócio
               </h2>
               <p className="text-xl text-white/80 mb-8">
-                Desenvolvemos agentes de IA com uma camada exclusiva de humanização, 
-                capazes de interagir com seus clientes e colaboradores de forma natural e empática.
+                Desenvolvemos sistemas automatizados inteligentes que executam tarefas complexas, 
+                atendem clientes e gerenciam processos sem interrupção, mantendo seu negócio funcionando sempre.
               </p>
               
               <div className="space-y-6 mb-8">
                 <FeatureItem 
                   icon={<BrainCircuit size={20} />} 
-                  title="Raciocínio avançado"
-                  description="Nossos agentes analisam contexto, histórico e intenções para tomar decisões inteligentes."
+                  title="Decisões inteligentes"
+                  description="Sistemas que analisam dados e tomam decisões baseadas em regras de negócio pré-definidas."
                 />
                 <FeatureItem 
                   icon={<MessageCircle size={20} />} 
-                  title="Comunicação natural"
-                  description="Conversas fluidas que respeitam o tom de voz da sua marca e conectam com seu público."
+                  title="Atendimento profissional"
+                  description="Comunicação clara e objetiva que mantém o padrão de qualidade da sua empresa."
                 />
                 <FeatureItem 
                   icon={<Sparkles size={20} />} 
-                  title="Personalidade definida"
-                  description="Cada agente possui características e traços que refletem os valores da sua empresa."
+                  title="Configuração personalizada"
+                  description="Sistemas configurados especificamente para as necessidades e processos do seu negócio."
                 />
                 <FeatureItem 
                   icon={<Network size={20} />} 
-                  title="Integração perfeita"
-                  description="Projetados para se encaixar perfeitamente nos processos existentes do seu negócio."
+                  title="Integração sem complicações"
+                  description="Implementação que funciona com seus sistemas atuais, sem precisar trocar nada."
                 />
               </div>
               
@@ -144,7 +144,7 @@ const AIAgents: React.FC = () => {
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-dark-800/50 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300"
               >
                 <span className="text-white/90 group-hover:text-white transition-colors">
-                  Conheça mais sobre nossos agentes
+                  Veja como nossos sistemas podem ajudar seu negócio
                 </span>
                 <ArrowRight className="w-4 h-4 text-primary-400 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -170,7 +170,7 @@ const AIAgents: React.FC = () => {
                         </div>
                         <div>
                           <h4 className="font-medium text-white">Assistente IA</h4>
-                          <p className="text-xs text-white/60">Automatik Labs</p>
+                          <p className="text-xs text-white/60">Fortexis</p>
                         </div>
                       </div>
                       <div className="space-y-3">

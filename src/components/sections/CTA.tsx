@@ -51,33 +51,33 @@ const CTA: React.FC = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Pronto para transformar seu negócio com <GradientText>IA sob medida?</GradientText>
+                Pronto para automatizar seu negócio e <GradientText>garantir sua competitividade?</GradientText>
               </h2>
               <p className="text-xl text-white/80 mb-8">
-                Preencha o formulário e vamos entender como podemos levar sua empresa para o próximo nível 
-                com inteligência e automação humanizada.
+                Preencha o formulário e descubra como podemos reduzir seus custos operacionais, 
+                aumentar sua produtividade e manter seu negócio competitivo no mercado.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
                 <BenefitCard
                   icon={<Target className="w-6 h-6" />}
-                  title="Diagnóstico Gratuito"
-                  description="Análise completa das necessidades do seu negócio"
+                  title="Análise Gratuita"
+                  description="Auditoria completa dos processos do seu negócio"
                 />
                 <BenefitCard
                   icon={<Lightbulb className="w-6 h-6" />}
-                  title="Proposta Personalizada"
-                  description="Soluções sob medida para seus objetivos"
+                  title="Plano Personalizado"
+                  description="Estratégia de automação específica para seu setor"
                 />
                 <BenefitCard
                   icon={<Rocket className="w-6 h-6" />}
-                  title="Implementação Rápida"
-                  description="Resultados em semanas, não meses"
+                  title="Resultados Rápidos"
+                  description="Primeiros resultados em 30 dias"
                 />
                 <BenefitCard
                   icon={<Gauge className="w-6 h-6" />}
-                  title="Suporte Dedicado"
-                  description="Acompanhamento em todas as etapas"
+                  title="Suporte Completo"
+                  description="Acompanhamento até você dominar o sistema"
                 />
               </div>
             </div>
@@ -86,9 +86,9 @@ const CTA: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
               <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <iframe
-                  src="https://typebot.co/aplica-es-automatik-labs-e4owx7x"
+                  src="https://typebot.co/null"
                   style={{ border: 'none', width: '100%', height: '600px' }}
-                  title="Typebot - Automatik Labs"
+                  title="Typebot - Fortexis"
                 />
               </div>
             </div>

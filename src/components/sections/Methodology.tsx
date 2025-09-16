@@ -49,11 +49,11 @@ const Methodology: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Metodologia <GradientText>Automatik</GradientText> — o Caminho para Resultados
+              Metodologia <GradientText>Fortexis</GradientText> — Resultados Garantidos
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Nossa abordagem proprietária combina diagnóstico profundo, planejamento estratégico 
-              e implementação gradual para transformar seu negócio com IA.
+              Nossa metodologia comprovada combina análise detalhada, planejamento estratégico 
+              e implementação gradual para garantir que a automação funcione perfeitamente no seu negócio.
             </p>
           </div>
           
@@ -64,48 +64,48 @@ const Methodology: React.FC = () => {
                 <MethodologyStep
                   number="01"
                   icon={<Target className="w-8 h-8" />}
-                  title="Diagnóstico Profundo"
-                  description="Análise completa dos processos, dores e oportunidades do seu negócio."
+                  title="Análise Detalhada"
+                  description="Mapeamos todos os processos do seu negócio para identificar onde a automação pode gerar mais resultados."
                   features={[
-                    "Mapeamento de processos",
-                    "Análise de eficiência",
-                    "Identificação de gargalos"
+                    "Auditoria completa de processos",
+                    "Identificação de gargalos",
+                    "Cálculo de ROI potencial"
                   ]}
                 />
                 
                 <MethodologyStep
                   number="02"
                   icon={<Lightbulb className="w-8 h-8" />}
-                  title="Planejamento Estratégico"
-                  description="Identificação dos fluxos que podem ser otimizados com IA e automação."
+                  title="Estratégia Personalizada"
+                  description="Criamos um plano de automação específico para seu negócio, priorizando resultados rápidos."
                   features={[
-                    "Definição de objetivos",
-                    "Roadmap de implementação",
-                    "KPIs de sucesso"
+                    "Plano de implementação por etapas",
+                    "Cronograma realista",
+                    "Metas claras de economia"
                   ]}
                 />
                 
                 <MethodologyStep
                   number="03"
                   icon={<Rocket className="w-8 h-8" />}
-                  title="Implementação Ágil"
-                  description="Desenvolvimento e integração dos agentes de IA sob medida."
+                  title="Implementação Eficiente"
+                  description="Colocamos as automações em funcionamento rapidamente, com testes rigorosos e treinamento da equipe."
                   features={[
-                    "Sprints focados",
-                    "Testes contínuos",
-                    "Feedback em tempo real"
+                    "Implementação por fases",
+                    "Testes em ambiente seguro",
+                    "Treinamento da equipe"
                   ]}
                 />
                 
                 <MethodologyStep
                   number="04"
                   icon={<Gauge className="w-8 h-8" />}
-                  title="Otimização Contínua"
-                  description="Análise de resultados e refinamento constante para maior eficiência."
+                  title="Acompanhamento e Melhoria"
+                  description="Monitoramos os resultados e fazemos ajustes para garantir que você tenha o máximo retorno do investimento."
                   features={[
-                    "Monitoramento 24/7",
-                    "Ajustes baseados em dados",
-                    "Evolução constante"
+                    "Relatórios mensais de performance",
+                    "Ajustes e melhorias contínuas",
+                    "Suporte técnico dedicado"
                   ]}
                 />
               </div>

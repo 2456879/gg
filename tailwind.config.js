@@ -4,31 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary - Azul Elétrico / Cobalto
+        // Primary - Azul Corporativo Premium
         primary: {
-          '50': '#EAF0FF',
-          '400': '#3A75FF',
-          '500': '#0057FF', // Cor principal
-          '600': '#0047D6',
-          '900': '#002D88',
+          '50': '#F0F4FF',
+          '400': '#4F7CFF',
+          '500': '#1E40AF', // Azul corporativo
+          '600': '#1E3A8A',
+          '900': '#1E293B',
         },
-        // Secondary - Roxo Profundo
+        // Secondary - Dourado Premium
         secondary: {
-          '400': '#7C3AED',
-          '500': '#4B00B7', // Cor secundária
-          '600': '#3A0094',
+          '400': '#F59E0B',
+          '500': '#D97706', // Dourado elegante
+          '600': '#B45309',
         },
-        // Accent - Verde Neon Suave
+        // Accent - Verde Sucesso
         accent: {
-          '400': '#00FFAA',
-          '500': '#00D18C', // Cor de destaque
-          '600': '#00A86B',
+          '400': '#10B981',
+          '500': '#059669', // Verde profissional
+          '600': '#047857',
         },
-        // Dark - Tons escuros profissionais
+        // Dark - Tons premium
         dark: {
-          '800': '#1A1A1A',
-          '900': '#111111',
-          '950': '#0B0B0B',
+          '800': '#1F2937',
+          '900': '#111827',
+          '950': '#030712',
         },
       },
       fontFamily: {
