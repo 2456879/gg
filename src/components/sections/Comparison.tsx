@@ -171,7 +171,7 @@ const Comparison: React.FC = () => {
                     <div className="p-6 text-center font-semibold text-lg">
                       Fortexis I.A
                       <div className="text-sm text-white/60 font-normal">
-                        (Nossa Agência)
+                        (Nossa Solução)
                       </div>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ const Comparison: React.FC = () => {
                       <StatusIcon status={row.freelancers} />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-white/70">Automatik Labs:</span>
+                      <span className="text-sm text-white/70">Fortexis I.A:</span>
                       <StatusIcon status={row.automatik} />
                     </div>
                   </div>

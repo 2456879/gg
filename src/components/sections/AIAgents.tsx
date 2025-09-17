@@ -19,51 +19,81 @@ const AIAgents: React.FC = () => {
     [
       {
         id: 1,
-        text: "Olá! Sou um agente da Fortexis I.A. Como posso ajudar você hoje?",
+        text: "Olá! Sou um agente especializado da Fortexis I.A. Como posso transformar seu negócio hoje?",
         sender: 'ai'
       },
       {
         id: 2,
-        text: "Preciso automatizar meu atendimento ao cliente.",
+        text: "Preciso automatizar meu atendimento ao cliente",
         sender: 'user'
       },
       {
         id: 3,
-        text: "Perfeito! Posso criar agentes humanizados que atendem 24/7 com a personalidade da sua marca. Quer ver uma demonstração?",
+        text: "Perfeito! Criamos agentes humanizados que atendem 24/7 com a personalidade da sua marca. Reduzimos custos em 70% e aumentamos satisfação!",
+        sender: 'ai'
+      },
+      {
+        id: 4,
+        text: "Isso é exatamente o que preciso! Como funciona?",
+        sender: 'user'
+      },
+      {
+        id: 5,
+        text: "Implementamos em 3 etapas: diagnóstico, desenvolvimento e otimização. Quer agendar uma demonstração gratuita?",
         sender: 'ai'
       }
     ],
     [
       {
         id: 1,
-        text: "Oi! Sou especialista em automação comercial. Em que posso ajudar?",
+        text: "Oi! Sou especialista em automação comercial da Fortexis I.A. Em que posso ajudar?",
         sender: 'ai'
       },
       {
         id: 2,
-        text: "Quero aumentar minhas vendas com IA.",
+        text: "Quero aumentar minhas vendas com IA",
         sender: 'user'
       },
       {
         id: 3,
-        text: "Excelente! Nossos agentes qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente. ROI garantido!",
+        text: "Excelente! Nossos agentes qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente. ROI de 300% em média!",
+        sender: 'ai'
+      },
+      {
+        id: 4,
+        text: "Quanto tempo leva para implementar?",
+        sender: 'user'
+      },
+      {
+        id: 5,
+        text: "Entre 2-4 semanas para estar 100% operacional. Começamos com um piloto em 1 semana. Quer conhecer nossos cases?",
         sender: 'ai'
       }
     ],
     [
       {
         id: 1,
-        text: "Olá! Especialista em integração de sistemas aqui. Como posso auxiliar?",
+        text: "Olá! Especialista em integração de sistemas da Fortexis I.A. Como posso auxiliar?",
         sender: 'ai'
       },
       {
         id: 2,
-        text: "Preciso integrar meus sistemas com IA.",
+        text: "Preciso integrar meus sistemas com IA",
         sender: 'user'
       },
       {
         id: 3,
-        text: "Conectamos todos os seus sistemas com inteligência artificial. Fluxos automatizados que economizam tempo e reduzem erros!",
+        text: "Conectamos todos os seus sistemas com IA inteligente. Fluxos automatizados que economizam 85% do tempo e reduzem erros!",
+        sender: 'ai'
+      },
+      {
+        id: 4,
+        text: "E se eu já tenho sistemas legados?",
+        sender: 'user'
+      },
+      {
+        id: 5,
+        text: "Sem problema! Somos especialistas em integrar sistemas antigos com IA moderna. Fazemos a ponte perfeita!",
         sender: 'ai'
       }
     ]
@@ -85,7 +115,6 @@ const AIAgents: React.FC = () => {
           } else {
             // Reset chat when component is out of view
             setMessages([]);
-            setCurrentConversationId(prev => (prev + 1) % conversations.length);
             chatStartedRef.current = false;
           }
         });
@@ -118,24 +147,23 @@ const AIAgents: React.FC = () => {
           currentIndex++;
           
           if (currentIndex < conversation.length) {
-            setTimeout(addMessage, 1000);
+            setTimeout(addMessage, 1500);
           } else {
             // Auto restart with next conversation after delay
             setTimeout(() => {
               setMessages([]);
               setCurrentConversationId(prev => (prev + 1) % conversations.length);
-              setTimeout(() => {
-                if (sectionRef.current) {
-                  const rect = sectionRef.current.getBoundingClientRect();
-                  if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    chatStartedRef.current = false;
-                    startChat();
-                  }
+              chatStartedRef.current = false;
+              // Only restart if still in view
+              if (sectionRef.current) {
+                const rect = sectionRef.current.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                  setTimeout(startChat, 1000);
                 }
-              }, 500);
-            }, 3000);
+              }
+            }, 4000);
           }
-        }, conversation[currentIndex].sender === 'ai' ? 2000 : 1000);
+        }, conversation[currentIndex].sender === 'ai' ? 2500 : 1200);
       }
     };
     
