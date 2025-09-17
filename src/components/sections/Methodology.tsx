@@ -11,8 +11,10 @@ const Methodology: React.FC = () => {
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('opacity-100');
-            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            setTimeout(() => {
+              entry.target.classList.add('opacity-100');
+              entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }, 250);
           }
         });
       },

@@ -7,6 +7,7 @@ const AIAgents: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isTyping, setIsTyping] = useState(false);
   const chatStartedRef = useRef(false);
+  const [currentConversationId, setCurrentConversationId] = useState(0);
   
   type Message = {
     id: number;
@@ -14,22 +15,58 @@ const AIAgents: React.FC = () => {
     sender: 'ai' | 'user';
   };
 
-  const conversation: Message[] = [
-    {
-      id: 1,
-      text: "Olá! Estou aqui para ajudar com suas dúvidas sobre nossos produtos. Como posso auxiliar hoje?",
-      sender: 'ai'
-    },
-    {
-      id: 2,
-      text: "Preciso de informações sobre integrações com meu sistema atual.",
-      sender: 'user'
-    },
-    {
-      id: 3,
-      text: "Claro! Nossas soluções são projetadas para integrar perfeitamente com sua infraestrutura existente. Posso agendar uma demonstração personalizada?",
-      sender: 'ai'
-    }
+  const conversations: Message[][] = [
+    [
+      {
+        id: 1,
+        text: "Olá! Sou um agente da Fortexis I.A. Como posso ajudar você hoje?",
+        sender: 'ai'
+      },
+      {
+        id: 2,
+        text: "Preciso automatizar meu atendimento ao cliente.",
+        sender: 'user'
+      },
+      {
+        id: 3,
+        text: "Perfeito! Posso criar agentes humanizados que atendem 24/7 com a personalidade da sua marca. Quer ver uma demonstração?",
+        sender: 'ai'
+      }
+    ],
+    [
+      {
+        id: 1,
+        text: "Oi! Sou especialista em automação comercial. Em que posso ajudar?",
+        sender: 'ai'
+      },
+      {
+        id: 2,
+        text: "Quero aumentar minhas vendas com IA.",
+        sender: 'user'
+      },
+      {
+        id: 3,
+        text: "Excelente! Nossos agentes qualificam leads, fazem follow-up e recuperam vendas perdidas automaticamente. ROI garantido!",
+        sender: 'ai'
+      }
+    ],
+    [
+      {
+        id: 1,
+        text: "Olá! Especialista em integração de sistemas aqui. Como posso auxiliar?",
+        sender: 'ai'
+      },
+      {
+        id: 2,
+        text: "Preciso integrar meus sistemas com IA.",
+        sender: 'user'
+      },
+      {
+        id: 3,
+        text: "Conectamos todos os seus sistemas com inteligência artificial. Fluxos automatizados que economizam tempo e reduzem erros!",
+        sender: 'ai'
+      }
+    ]
   ];
 
   const [messages, setMessages] = useState<Message[]>([]);
@@ -48,6 +85,7 @@ const AIAgents: React.FC = () => {
           } else {
             // Reset chat when component is out of view
             setMessages([]);
+            setCurrentConversationId(prev => (prev + 1) % conversations.length);
             chatStartedRef.current = false;
           }
         });
@@ -67,6 +105,7 @@ const AIAgents: React.FC = () => {
   }, []);
 
   const startChat = () => {
+    const conversation = conversations[currentConversationId];
     let currentIndex = 0;
     
     const addMessage = () => {
@@ -80,6 +119,21 @@ const AIAgents: React.FC = () => {
           
           if (currentIndex < conversation.length) {
             setTimeout(addMessage, 1000);
+          } else {
+            // Auto restart with next conversation after delay
+            setTimeout(() => {
+              setMessages([]);
+              setCurrentConversationId(prev => (prev + 1) % conversations.length);
+              setTimeout(() => {
+                if (sectionRef.current) {
+                  const rect = sectionRef.current.getBoundingClientRect();
+                  if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    chatStartedRef.current = false;
+                    startChat();
+                  }
+                }
+              }, 500);
+            }, 3000);
           }
         }, conversation[currentIndex].sender === 'ai' ? 2000 : 1000);
       }
@@ -152,44 +206,45 @@ const AIAgents: React.FC = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
-              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl p-1 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
-                <div className="relative rounded-xl overflow-hidden">
+              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10 overflow-hidden">
+                <div className="relative">
                   <img 
                     src="https://images.pexels.com/photos/8438969/pexels-photo-8438969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                     alt="AI agent visualization" 
-                    className="w-full h-[400px] md:h-[500px] object-cover"
+                    className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/50 to-transparent"></div>
                   
                   {/* Chat interface */}
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <div className="bg-dark-800/90 backdrop-blur-sm rounded-xl p-5 border border-dark-700/50">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
-                          <BrainCircuit size={18} className="text-white" />
+                  <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 md:bottom-8 md:left-8 md:right-8">
+                    <div className="bg-dark-800/95 backdrop-blur-sm rounded-xl p-3 sm:p-4 md:p-5 border border-dark-700/50">
+                      <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center flex-shrink-0">
+                          <BrainCircuit size={16} className="text-white sm:w-[18px] sm:h-[18px]" />
                         </div>
                         <div>
-                          <h4 className="font-medium text-white">Agente IA</h4>
-                          <p className="text-xs text-white/60">Fortexis I.A</p>
+                          <h4 className="font-medium text-white text-sm sm:text-base">Agente IA</h4>
+                          <p className="text-xs text-white/60 hidden sm:block">Fortexis I.A</p>
                         </div>
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3 max-h-32 sm:max-h-40 md:max-h-48 overflow-y-auto">
                         {messages && messages.map((message) => (
                           message && (
                             <div
                               key={message.id}
                               className={`${
                                 message.sender === 'ai'
-                                  ? 'bg-primary-500/10 border border-primary-500/20'
-                                  : 'bg-dark-700/30 border border-dark-600/20 ml-auto'
-                              } p-3 rounded-lg max-w-[80%] animate-fade-in`}
+                                  ? 'bg-primary-500/10 border border-primary-500/20 mr-4'
+                                  : 'bg-dark-700/30 border border-dark-600/20 ml-4'
+                              } p-2 sm:p-3 rounded-lg animate-fade-in`}
                             >
-                              <p className="text-white/90 text-sm">{message.text}</p>
+                              <p className="text-white/90 text-xs sm:text-sm leading-relaxed">{message.text}</p>
                             </div>
                           )
                         ))}
                         {isTyping && (
-                          <div className="bg-primary-500/10 p-3 rounded-lg max-w-[80%] border border-primary-500/20">
+                          <div className="bg-primary-500/10 p-2 sm:p-3 rounded-lg mr-4 border border-primary-500/20">
                             <div className="flex gap-1">
                               <div className="w-2 h-2 rounded-full bg-primary-400 animate-bounce" style={{ animationDelay: '0ms' }} />
                               <div className="w-2 h-2 rounded-full bg-primary-400 animate-bounce" style={{ animationDelay: '150ms' }} />

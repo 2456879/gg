@@ -25,3 +25,47 @@
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
 }
+
+/* Smooth scrolling performance */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize animations for better performance */
+* {
+  will-change: auto;
+}
+
+.opacity-0 {
+  will-change: opacity, transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-fade-in {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Better mobile performance */
+@media (max-width: 768px) {
+  .blur-xl {
+    backdrop-filter: blur(8px);
+  }
+  
+  .blur-\[96px\] {
+    filter: blur(48px);
+  }
+  
+  .blur-\[128px\] {
+    filter: blur(64px);
+  }
+}
