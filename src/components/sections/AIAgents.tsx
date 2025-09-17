@@ -281,7 +281,6 @@ const AIAgents: React.FC = () => {
                           <p className="text-xs text-white/60 hidden sm:block">Fortexis I.A</p>
                         </div>
                       </div>
-                      <div className="space-y-2 sm:space-y-3 max-h-32 sm:max-h-40 md:max-h-48 overflow-y-auto">
                       <div 
                         ref={chatContainerRef}
                         className="space-y-2 sm:space-y-3 max-h-32 sm:max-h-40 md:max-h-48 overflow-y-auto scroll-smooth"
