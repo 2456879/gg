@@ -316,6 +316,7 @@ const AIAgents: React.FC = () => {
             </div>
           </div>
         </div>
+      </Container>
     </section>
   );
 };
