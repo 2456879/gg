@@ -5,6 +5,7 @@ import { BrainCircuit, MessageCircle, Sparkles, Network, ArrowRight } from 'luci
 
 const AIAgents: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
   const [isTyping, setIsTyping] = useState(false);
   const chatStartedRef = useRef(false);
   const [currentConversationId, setCurrentConversationId] = useState(0);
@@ -101,6 +102,30 @@ const AIAgents: React.FC = () => {
 
   const [messages, setMessages] = useState<Message[]>([]);
   
+  // Auto-scroll function
+  const scrollToBottom = () => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Effect to auto-scroll when messages change
+  useEffect(() => {
+    if (messages.length > 0) {
+      setTimeout(scrollToBottom, 100);
+    }
+  }, [messages]);
+
+  // Effect to scroll when typing indicator appears
+  useEffect(() => {
+    if (isTyping) {
+      setTimeout(scrollToBottom, 100);
+    }
+  }, [isTyping]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -257,6 +282,10 @@ const AIAgents: React.FC = () => {
                         </div>
                       </div>
                       <div className="space-y-2 sm:space-y-3 max-h-32 sm:max-h-40 md:max-h-48 overflow-y-auto">
+                      <div 
+                        ref={chatContainerRef}
+                        className="space-y-2 sm:space-y-3 max-h-32 sm:max-h-40 md:max-h-48 overflow-y-auto scroll-smooth"
+                      >
                         {messages && messages.map((message) => (
                           message && (
                             <div
